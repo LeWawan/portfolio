@@ -72,9 +72,5 @@
 </template>
 
 <style>
-  svg{
-    width:15%;
-    height:100%;
-  }
 </style>
 

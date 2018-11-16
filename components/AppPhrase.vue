@@ -2,10 +2,12 @@
   <vue-typer
     class="catchphrase" 
     :text="[
-      'Hello There !',
-      'How are you ?'
+      'Are you here ?',
+      'Nevermind...',
+      'Scroll down if you\'re here !'
     ]"
     :repeat="0"
+    :typeDelay="90"
     erase-style="clear"
     caret-animation="smooth"
     @completed="step(1)">
@@ -31,8 +33,7 @@ export default {
 
 <style lang="css" scoped>
   .catchphrase{
-    font-style: 'Nunito';
-    font-weight: 200;
+    font-family: monospace;
     font-size: 2rem;
     margin-top: 1rem;
   }
