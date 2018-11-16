@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'r4z0rFr&apos;s Portfolio' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Nunito:200,600' }
     ]
   },
   /*
@@ -34,6 +35,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    { src: '~plugins/vue-typer', ssr: false}
+  ]
 }
 

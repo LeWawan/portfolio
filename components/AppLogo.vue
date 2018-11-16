@@ -1,5 +1,5 @@
 <template>
-  <svg class="rocketManSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600" >
+  <svg class="rocketManSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="220 193 160 165" >
 
     <g class="astronaut">
       <g class="pulseSVG" opacity="0.2" stroke="#ededed">
@@ -73,7 +73,7 @@
 
 <style>
   svg{
-    width:100%;
+    width:15%;
     height:100%;
   }
 </style>
