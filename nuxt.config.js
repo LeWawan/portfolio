@@ -3,16 +3,24 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'portfolio',
+    title: 'La Wawan Company',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'r4z0rFr&apos;s Portfolio' }
+      { hid: 'description', name: 'description', content: 'La Wawan Company' },
+      { hid: 'title', name: 'title', content: 'La Wawan Company' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Nunito:200,600' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css' },
+      { rel: 'stylesheet', 
+        type: 'text/css', 
+        href: 'https://use.fontawesome.com/releases/v5.5.0/css/all.css', 
+        integrity: 'sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU',
+        crossorigin: 'anonymous'
+      }
     ]
   },
   /*
@@ -38,7 +46,9 @@ module.exports = {
     }
   },
   plugins: [
-    { src: '~plugins/vue-typer', ssr: false}
+    { src: '~plugins/vue-typer', ssr: false}, 
+    { src: '~plugins/vue-scrollto', ssr: false},
+    { src: '~node_modules/animejs/anime', ssr: false}
   ]
 }
 
