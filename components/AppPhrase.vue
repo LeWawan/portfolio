@@ -2,9 +2,10 @@
   <vue-typer
     class="catchphrase" 
     :text="[
+      'Hey !',
       'Are you here ?',
       'Nevermind...',
-      'Scroll down if you\'re here !'
+      'Click on the presentation planet if you\'re here !'
     ]"
     :repeat="0"
     :typeDelay="90"

@@ -71,6 +71,17 @@
   </svg>
 </template>
 
+<script>
+  export default{
+    name: 'AppLogo',
+    data () {
+      return{
+
+      }
+    }
+  };
+</script>
+
 <style>
 </style>
 
