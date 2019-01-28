@@ -3,12 +3,12 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'La Wawan Company',
+    title: 'The Wawan Company',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'La Wawan Company' },
-      { hid: 'title', name: 'title', content: 'La Wawan Company' }
+      { hid: 'description', name: 'description', content: 'The Wawan Company' },
+      { hid: 'title', name: 'title', content: 'The Wawan Company' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -17,7 +17,7 @@ module.exports = {
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css' },
       { rel: 'stylesheet', 
         type: 'text/css', 
-        href: 'https://use.fontawesome.com/releases/v5.5.0/css/all.css', 
+        href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', 
         integrity: 'sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU',
         crossorigin: 'anonymous'
       }
