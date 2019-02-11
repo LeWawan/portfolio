@@ -5,7 +5,8 @@
       'Hey !',
       'Are you here ?',
       'Nevermind...',
-      'Click on the presentation planet if you\'re here !'
+      'If you here...',
+      'Scroll down !',
     ]"
     :repeat="0"
     :typeDelay="90"

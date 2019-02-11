@@ -1,5 +1,11 @@
 <template>
-  <svg class="rocketManSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="220 193 160 165" >
+  <svg class="rocketManSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :height="height" viewBox="220 193 160 165" >
+
+    <rect x="275" y="263.3" clip-path="url(#rainbowClip)" fill="#CC583F" width="10" height="212.7" v-if="isScroll"/>
+    <rect x="285" y="263.3" clip-path="url(#rainbowClip)" fill="#ECB447" width="10" height="212.7" v-if="isScroll"/>
+    <rect x="295" y="263.3" clip-path="url(#rainbowClip)" fill="#75C095" width="10" height="212.7" v-if="isScroll"/>
+    <rect x="305" y="263.3" clip-path="url(#rainbowClip)" fill="#5991AA" width="10" height="212.7" v-if="isScroll"/>
+    <rect x="315" y="263.3" clip-path="url(#rainbowClip)" fill="#7D6AAD" width="10" height="212.7" v-if="isScroll"/>
 
     <g class="astronaut">
       <g class="pulseSVG" opacity="0.2" stroke="#ededed">
@@ -74,12 +80,50 @@
 <script>
   export default{
     name: 'AppLogo',
-    data () {
-      return{
-
+    data() {
+      return {
+        isScroll: false,
+        height: 300,
+        scroll: 0
       }
+    },
+    methods: {
+      handleScroll () {
+        if(window.scrollY <= 0){
+          this.isScroll = false
+        } else {
+          this.isScroll = true
+        }
+
+        if (window.scrollY > this.scroll) {
+          if (this.height < 500) {
+            this.height += 4
+          }
+        } else {
+          if (this.height > 300) {
+            this.height -= 4
+          }
+        }
+
+        if (this.scroll === 1) {
+          this.height = 300
+        }
+
+        this.scroll = window.scrollY
+      }
+    },
+    created () {
+        if (process.browser) { 
+            window.addEventListener('scroll', this.handleScroll);
+        }
+    },
+    destroyed () {
+        if (process.browser) { 
+            window.removeEventListener('scroll', this.handleScroll);
+        }
     }
   };
+
 </script>
 
 <style>
