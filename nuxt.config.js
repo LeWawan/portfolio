@@ -49,6 +49,15 @@ module.exports = {
     { src: '~plugins/vue-typer', ssr: false}, 
     { src: '~plugins/vue-scrollto', ssr: false},
     { src: '~node_modules/animejs/anime', ssr: false}
-  ]
+  ],
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'pages/404.vue')
+      })
+    }
+  }
 }
 
