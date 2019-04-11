@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <img src="/computer-work.jpg" class="h-32 lg:h-full w-full lg:block fit">
+    <img src="/computer-work.jpg" class="block h-auto w-full">
     <div class="px-6 py-4">
       <img src="https://lh5.googleusercontent.com/-pX4qTP8CNAM/AAAAAAAAAAI/AAAAAAAAFa4/X1uXDj-qNVo/photo.jpg?sz=250" alt="user avatar" class="rounded-full border-4 border-white shadow-lg w-1/3 -mt-24">
       <div class="font-bold text-xl mb-2 mt-2">Erwan Kreutz</div>
