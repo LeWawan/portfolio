@@ -1,4 +1,4 @@
-  {
+{
   "name": "portfolio",
   "version": "1.0.0",
   "description": "r4z0rFr's Portfolio",
@@ -13,6 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/component-cache": "^1.1.4",
+    "@nuxtjs/pwa": "^3.0.0-beta.6",
     "animejs": "^2.2.0",
     "nuxt": "^2.0.0",
     "vue-scrollto": "^2.13.0",
