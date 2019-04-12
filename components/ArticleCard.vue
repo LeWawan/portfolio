@@ -1,7 +1,7 @@
 <template>
 	<div class="max-w-md w-full lg:flex shadow-lg m-2">
 	  <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-	  	<img :src="imagePath" class="lg:bg-white">
+	  	<img :src="imagePath" class="lg:bg-white" :alt="title">
 	  </div>
 	  <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal w-full">
 	    <div class="mb-4">
@@ -11,7 +11,7 @@
 	    <div class="flex sm:flex-row flex-col flew-wrap items-center">
 	    		<a class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-1 no-underline" v-for="tag in tags" :key="tag.name" :href="tag.link" target="blank">#{{ tag.name }}</a>	
 
-	    		<a :href="github" class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-1 ml-auto" v-if="github"><img src="/github-brands.svg" class="pt-1" width="20" height="20"></a>
+	    		<a :href="github" class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-1 ml-auto" v-if="github" name="github link"><img src="/github-brands.svg" class="pt-1" width="20" height="20" alt="github logo"></a>
 	    </div>
 	  </div>
 	</div>

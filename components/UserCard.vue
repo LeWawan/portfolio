@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4">
-    <img src="/computer-work.jpg" class="block h-auto w-full">
+    <img src="/computer-work.jpg" class="block h-auto w-full" alt="user hover">
     <div class="px-6 py-4">
       <img src="https://lh5.googleusercontent.com/-pX4qTP8CNAM/AAAAAAAAAAI/AAAAAAAAFa4/X1uXDj-qNVo/photo.jpg?sz=250" alt="user avatar" class="rounded-full border-4 border-white shadow-lg w-1/3 -mt-24">
       <div class="font-bold text-xl mb-2 mt-2">Erwan Kreutz</div>
@@ -17,12 +17,12 @@
       <button v-scroll-to="'#specs'" class="text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">See all my projects</button>
     </div>
     <div class="pb-6 h-8 mb-12 mt-8">
-      <a href="https://gitlab.com/r4z0rFr" target="_blank" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest">
+      <a href="https://gitlab.com/r4z0rFr" target="_blank" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest" name="gitlab link">
         <span style="font-size: 36px">
           <i class="fab fa-gitlab"></i>
         </span>
       </a>
-      <a href="https://www.linkedin.com/in/erwan-kreutz-220b46a5/" target="_blank" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest">
+      <a href="https://www.linkedin.com/in/erwan-kreutz-220b46a5/" target="_blank" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest" name="linkedin link">
         <span style="font-size: 36px">
           <i class="fab fa-linkedin"></i>
         </span>
