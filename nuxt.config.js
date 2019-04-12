@@ -50,6 +50,14 @@ module.exports = {
     { src: '~plugins/vue-scrollto', ssr: false},
     { src: '~node_modules/animejs/anime', ssr: false}
   ],
+  modules: [
+    '@nuxtjs/component-cache',
+    ['@nuxtjs/pwa', { icon: false }],
+  ],
+  manifest: {
+    name: 'The Wawan Company',
+    lang: 'fr'
+  },
   router: {
     extendRoutes (routes, resolve) {
       routes.push({
