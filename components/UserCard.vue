@@ -14,7 +14,7 @@
       <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#vuejs</span>
     </div>
     <div class="pt-2">
-      <button v-scroll-to="'#specs'" class="text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker cursor-not-allowed">See all my projects</button>
+      <button v-scroll-to="'#specs'" class="text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">See all my projects</button>
     </div>
     <div class="pb-6 h-8 mb-12 mt-8">
       <a href="https://gitlab.com/r4z0rFr" target="_blank" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest">
