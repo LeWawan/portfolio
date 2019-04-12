@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="hidden lg:flex flex-col fixed pin-t pin-x z-100 text-center m-12 ">
-      <div class="flex items-center cursor-pointer w-1/5" v-scroll-to="'#landing'">
+      <div class="flex items-center cursor-pointer w-1/5 z-0" v-scroll-to="'#landing'">
         <earth class="w-12"/><p class="font-bold mx-2">Landing</p>
       </div>
-      <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4"></div>
+      <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4 z-0"></div>
       <div class="flex items-center cursor-pointer w-1/5" v-scroll-to="{el: '#user', offset: -110}">
         <mercury class="w-12"/><p class="font-bold mx-2">Presentation</p>
       </div>
-      <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4"></div>
+      <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4 z-0"></div>
       <div class="flex items-center cursor-pointer w-1/5" v-scroll-to="{el: '#specs', offset: -110}">
         <img src="/astro.png" class="w-12"/><p class="font-bold mx-2">Projects</p>
       </div>
@@ -28,7 +28,7 @@
       <specs-card id="specs"/>
     </div>
 
-    <div class="text-grey-darker text-center pin-b">
+    <div class="text-grey-darker text-center">
       Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub" class="text-grey-darker font-bold">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="text-grey-darker font-bold">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" class="text-grey-darker font-bold">CC 3.0 BY</a>
     </div>
   </div>
@@ -42,6 +42,7 @@ import Earth from '~/components/Earth.vue'
 import Mercury from '~/components/Mercury.vue'
 import Neptune from '~/components/Neptune.vue'
 import SpecsCard from '~/components/SpecsCard.vue'
+
 
 export default {
   components: {
