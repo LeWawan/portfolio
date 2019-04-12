@@ -1,7 +1,7 @@
 <template>
   <div>
     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;height:48px;width:48px;" xml:space="preserve">
     <circle style="fill:#FFCB5A;" cx="232.052" cy="260.822" r="222.013"/>
     <g>
       <path style="fill:#8A4325;" d="M303.733,273.486c-3.716-0.01-7.095-2.153-8.687-5.512c-4.556-9.576-6.911-20.058-6.892-30.667

@@ -4,14 +4,21 @@
 
       <article-card title="Rope Up - Basecamp" 
                     content="Implementation and maintenance of the backend side of the application" 
-                    :tags="['laravel', 'vuejs', 'api']"
+                    :tags="[
+                      {name: 'laravel', link: 'https://laravel.com'}, 
+                      {name: 'vuejs', link: 'https://vuejs.org'}, 
+                      {name: 'rest-api', link: '#'}, 
+                    ]"
                     link="https://www.ropeup.fr/"
                     image-path="/ropeUp.png">
       </article-card>
 
       <article-card title="This Portfolio" 
                     content="Creation, implementation and maintenance" 
-                    :tags="['vuejs', 'nuxt']"
+                    :tags="[
+                      {name: 'nuxt', link: 'https://fr.nuxtjs.org'}, 
+                      {name: 'vuejs', link: 'https://vuejs.org'}, 
+                    ]"
                     link="https://thewawancompany.fr"
                     image-path="/astro.png"
                     github="https://gitlab.com/r4z0rFr/portfolio">
@@ -19,7 +26,12 @@
 
       <article-card title="Festipay" 
                     content="Creation, implementation and maintenance of the api side of the applicaiton" 
-                    :tags="['laravel', 'vuejs', 'angular', 'xamarin']"
+                    :tags="[
+                      {name: 'laravel', link: 'https://laravel.com'}, 
+                      {name: 'vuejs', link: 'https://vuejs.org'}, 
+                      {name: 'angular', link: 'https://angular.io'}, 
+                      {name: 'xamarin', link: 'https://docs.microsoft.com/fr-fr/xamarin'}
+                    ]"
                     link="#"
                     image-path="/festipay.png"
                     github="https://gitlab.com/festipay/api">

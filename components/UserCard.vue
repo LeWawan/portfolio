@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4">
     <img src="/computer-work.jpg" class="block h-auto w-full">
     <div class="px-6 py-4">
       <img src="https://lh5.googleusercontent.com/-pX4qTP8CNAM/AAAAAAAAAAI/AAAAAAAAFa4/X1uXDj-qNVo/photo.jpg?sz=250" alt="user avatar" class="rounded-full border-4 border-white shadow-lg w-1/3 -mt-24">

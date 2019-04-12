@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+  <div style="height:48px;width:48px">
+    <svg version="1.1"  id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;height:48px;width:48px;" xml:space="preserve">
     <path style="fill:#0C6BC3;" d="M58.35,320.088C32.724,210.926,100.44,101.65,209.602,76.023s218.439,42.09,244.065,151.252
       c20.242,86.219-17.743,175.616-93.855,220.902c-1.942,1.148-3.884,2.295-5.914,3.354c-98.163,54.095-221.599,18.379-275.694-79.793
       C69.261,355.513,62.579,338.132,58.35,320.088z"/>

@@ -1,23 +1,23 @@
 <template>
   <div>
-    <div class="hidden lg:flex flex-col fixed pin-t pin-x z-100 text-center m-12 ">
-      <div class="flex items-center cursor-pointer w-1/5 z-0" v-scroll-to="'#landing'">
-        <earth class="w-12"/><p class="font-bold mx-2">Landing</p>
+    <div class="hidden lg:flex flex-col fixed z-100 text-center m-12 w-auto">
+      <div class="flex items-center cursor-pointer z-0" v-scroll-to="'#landing'">
+        <earth class="nav-items"/><p class="font-bold mx-2">Landing</p>
       </div>
       <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4 z-0"></div>
-      <div class="flex items-center cursor-pointer w-1/5" v-scroll-to="{el: '#user', offset: -110}">
-        <mercury class="w-12"/><p class="font-bold mx-2">Presentation</p>
+      <div class="flex items-center cursor-pointer" v-scroll-to="{el: '#user', offset: -110}">
+        <mercury class="nav-items"/><p class="font-bold mx-2">Presentation</p>
       </div>
       <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4 z-0"></div>
-      <div class="flex items-center cursor-pointer w-1/5" v-scroll-to="{el: '#specs', offset: -110}">
-        <img src="/astro.png" class="w-12"/><p class="font-bold mx-2">Projects</p>
+      <div class="flex items-center cursor-pointer" v-scroll-to="{el: '#specs', offset: -110}">
+        <img src="/astro.png" class="nav-items"/><p class="font-bold mx-2">Projects</p>
       </div>
       <!-- <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4"></div>
       <div class="flex items-center cursor-pointer w-1/5" v-scroll-to="'#specs'">
         <neptune class="w-12"/><p class="font-bold mx-2">Specs</p>
       </div> -->
     </div>
-    <div class="page-container flex flex-col min-h-screen">
+    <div class="page-container flex flex-col min-h-screen fullh">
         <app-logo class="w-1/6" id="landing"/>
         <app-phrase/>
     </div>
@@ -60,11 +60,14 @@ export default {
 
 <style>
 .page-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.full{
+  height: 100vh;
 }
 
 body{
@@ -80,6 +83,10 @@ body{
 
 .black{
   background-color: #2c2c2c;
+}
+.nav-items{
+  width: 48px!important;
+  height: 48px!important;
 }
 </style>
 
