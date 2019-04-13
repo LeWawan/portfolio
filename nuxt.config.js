@@ -65,7 +65,6 @@ module.exports = {
   ],
   manifest: {
     name: 'The Wawan Company',
-    short
     lang: 'fr',
     theme_color: '#ffffff',
   },
