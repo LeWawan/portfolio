@@ -17,12 +17,12 @@
       <button v-scroll-to="'#specs'" class="text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">See all my projects</button>
     </div>
     <div class="pb-6 h-8 mb-12 mt-8">
-      <a href="https://gitlab.com/r4z0rFr" target="_blank" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest" name="gitlab link">
+      <a href="https://gitlab.com/r4z0rFr" aria-label="See more on my gitlab" target="_blank" rel="noopener" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest" name="gitlab link">
         <span style="font-size: 36px">
           <i class="fab fa-gitlab"></i>
         </span>
       </a>
-      <a href="https://www.linkedin.com/in/erwan-kreutz-220b46a5/" target="_blank" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest" name="linkedin link">
+      <a href="https://www.linkedin.com/in/erwan-kreutz-220b46a5/" aria-label="See more on my linkedin" target="_blank" rel="noopener" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest" name="linkedin link">
         <span style="font-size: 36px">
           <i class="fab fa-linkedin"></i>
         </span>

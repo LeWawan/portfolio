@@ -21,7 +21,8 @@
                     ]"
                     link="https://thewawancompany.fr"
                     image-path="/astro.png"
-                    github="https://gitlab.com/r4z0rFr/portfolio">
+                    github="https://gitlab.com/r4z0rFr/portfolio"
+                    vcstype="gitlab">
       </article-card>
 
       <article-card title="Festipay" 
@@ -34,7 +35,8 @@
                     ]"
                     link="#"
                     image-path="/festipay.png"
-                    github="https://gitlab.com/festipay/api">
+                    github="https://gitlab.com/festipay/api"
+                    vcstype="github">
       </article-card>
    </div>
 </div>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <div class="hidden lg:flex flex-col fixed z-100 text-center m-12 w-auto">
       <div class="flex items-center cursor-pointer z-0" v-scroll-to="'#landing'">
         <earth class="nav-items"/><p class="font-bold mx-2">Landing</p>
@@ -10,7 +10,7 @@
       </div>
       <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4 z-0"></div>
       <div class="flex items-center cursor-pointer" v-scroll-to="{el: '#specs', offset: -110}">
-        <img src="/astro.png" class="nav-items"/><p class="font-bold mx-2">Projects</p>
+        <img src="/astro.png" class="nav-items" alt="astro_logo" /><p class="font-bold mx-2">Projects</p>
       </div>
       <!-- <div class="bg-grey-darker w-1 h-12 rounded-full ml-5 my-4"></div>
       <div class="flex items-center cursor-pointer w-1/5" v-scroll-to="'#specs'">
@@ -29,9 +29,9 @@
     </div>
 
     <div class="text-grey-darker text-center">
-      Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub" class="text-grey-darker font-bold">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="text-grey-darker font-bold">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" class="text-grey-darker font-bold">CC 3.0 BY</a>
+      Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub" class="text-grey-darker font-bold">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="text-grey-darker font-bold">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noopener" class="text-grey-darker font-bold">CC 3.0 BY</a>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

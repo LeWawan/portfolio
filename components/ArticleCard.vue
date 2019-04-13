@@ -5,13 +5,13 @@
 	  </div>
 	  <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal w-full">
 	    <div class="mb-4">
-	      <a class="text-black font-bold text-xl no-underline" :href="link" target="blank">{{ title }}</a>
+	      <a class="text-black font-bold text-xl no-underline" :href="link" target="_blank" rel="noopener">{{ title }}</a>
 	      <p class="text-grey-darker text-base mt-2">{{ content }}</p>
 	    </div>
 	    <div class="flex sm:flex-row flex-col flew-wrap items-center">
-	    		<a class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-1 no-underline" v-for="tag in tags" :key="tag.name" :href="tag.link" target="blank">#{{ tag.name }}</a>	
+	    		<a class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-1 no-underline" v-for="tag in tags" :key="tag.name" :href="tag.link" target="_blank" rel="noopener">#{{ tag.name }}</a>	
 
-	    		<a :href="github" class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-1 ml-auto" v-if="github" name="github link"><img src="/github-brands.svg" class="pt-1" width="20" height="20" alt="github logo"></a>
+	    		<a :href="github" class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-1 ml-auto" v-if="github" name="github link" :aria-label="`See more on the ${vcstype} repo`"><i :class="`fab fa-${vcstype}`"></i></a>
 	    </div>
 	  </div>
 	</div>
@@ -37,6 +37,9 @@ export default {
   	github:{
   		type:String
   	},
+    vcstype:{
+      type:String
+    },
   	tags:{
   		type: Array,
   		default: () => {

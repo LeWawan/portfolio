@@ -16,16 +16,17 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Nunito:200,600' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css' },
       { rel: 'stylesheet', 
         type: 'text/css', 
-        href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', 
-        integrity: 'sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU',
+        href: 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', 
+        integrity: 'sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf',
         crossorigin: 'anonymous'
       }
     ]
   },
+  css: [
+    '@/assets/css/main.css'
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -46,7 +47,12 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    extractCSS: true,
+    postcss: [
+      require('tailwindcss')('./tailwind.js'),
+      require('autoprefixer')
+    ],
   },
   plugins: [
     { src: '~plugins/vue-typer', ssr: false}, 
@@ -55,11 +61,12 @@ module.exports = {
   ],
   modules: [
     '@nuxtjs/component-cache',
-    ['@nuxtjs/pwa', { icon: false }],
+    ['@nuxtjs/pwa'],
   ],
   manifest: {
     name: 'The Wawan Company',
-    lang: 'fr'
+    lang: 'fr',
+    theme_color: '#ffffff',
   },
   router: {
     extendRoutes (routes, resolve) {
