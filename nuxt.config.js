@@ -60,7 +60,9 @@ module.exports = {
     { src: '~node_modules/animejs/anime', ssr: false}
   ],
   modules: [
-    '@nuxtjs/component-cache',
+    ['@nuxtjs/component-cache', {
+      max: 10000,
+    }],
     ['@nuxtjs/pwa'],
   ],
   manifest: {

@@ -1,5 +1,5 @@
 <template>
-	<div class="max-w-md w-full lg:flex shadow-lg m-2">
+	<div class="max-w-md w-full lg:flex shadow-lg m-2 rounded">
 	  <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
 	  	<img :src="imagePath" class="lg:bg-white" :alt="title">
 	  </div>
