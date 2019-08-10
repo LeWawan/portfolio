@@ -13,8 +13,9 @@
       <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#laravel</span>
       <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#vuejs</span>
     </div>
-    <div class="pt-2">
-      <button v-scroll-to="'#specs'" class="text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">See all my projects</button>
+    <div class="justify-center pt-2 px-6">
+      <button v-scroll-to="'#specs'" class="mx-2 text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">See all my projects</button>
+      <a href="mailto:e.kreutz.pro@gmail.com" class="mx-2 no-underline text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">Contact</a>
     </div>
     <div class="pb-6 h-8 mb-12 mt-8">
       <a href="https://gitlab.com/r4z0rFr" aria-label="See more on my gitlab" target="_blank" rel="noopener" class="mx-4 w-6 text-grey-darker hover:text-grey-darkest" name="gitlab link">
