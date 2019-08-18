@@ -5,7 +5,7 @@
       <img src="https://lh5.googleusercontent.com/-pX4qTP8CNAM/AAAAAAAAAAI/AAAAAAAAFa4/X1uXDj-qNVo/photo.webp?sz=250" alt="user avatar" class="rounded-full border-4 border-white shadow-lg w-1/3 -mt-24">
       <div class="font-bold text-xl mb-2 mt-2">Erwan Kreutz</div>
       <p class="text-grey-darker text-base">
-        first self-taught and now in a professionalization contract to become a full stack developer. I opened my own company a short while ago. From small to large projects, I am open to any work proposal.
+        {{ $t('presentation') }}
       </p>
     </div>
     <div class="px-6 py-4">
@@ -14,7 +14,7 @@
       <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#vuejs</span>
     </div>
     <div class="justify-center pt-2 px-6">
-      <button v-scroll-to="'#specs'" class="mx-2 text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">See all my projects</button>
+      <button v-scroll-to="'#specs'" class="mx-2 my-4 text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">See all my projects</button>
       <a href="mailto:e.kreutz.pro@gmail.com" class="mx-2 no-underline text-grey-darker bg-grey-lighter hover:bg-grey-light hover:text-black font-semibold px-4 py-2 rounded-lg focus:outline-none border-grey-darker">Contact</a>
     </div>
     <div class="pb-6 h-8 mb-12 mt-8">

@@ -79,7 +79,30 @@ module.exports = {
       max: 10000,
     }],
     ['@nuxtjs/pwa'],
+    ['nuxt-i18n', {
+      detectBrowserLanguage: {
+        useCookie: true,
+        alwaysRedirect: true
+      }
+    }],
   ],
+  i18n: {
+    locales: ['en', 'fr'],
+    defaultLocale: 'fr',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          welcome: 'Welcome',
+          presentation: "first self-taught and now a full stack developer. I opened my own company a short while ago. From small to large projects, I am open to any work proposal."
+        },
+        fr: {
+          welcome: 'Bienvenue',
+          presentation: "D'abord autodidacte et maintenant developpeur full stack. J'ai ouvert ma micro entreprise il y a peu. Des petits au grands projets, je suis ouvert à toute proposition de travail."
+        }
+      }
+    }
+  },
   manifest: {
     name: 'The Wawan Company',
     lang: 'fr',

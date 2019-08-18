@@ -1,11 +1,11 @@
 <template>
-  <svg class="rocketManSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :height="height" viewBox="220 193 160 165" >
+  <svg class="w-32 landing" v-bind:class="{ takeoff: isScroll }" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="200"  viewBox="220 193 160 165" >
 
-    <rect x="275" y="263.3" clip-path="url(#rainbowClip)" fill="#CC583F" width="10" height="212.7" v-if="isScroll"/>
-    <rect x="285" y="263.3" clip-path="url(#rainbowClip)" fill="#ECB447" width="10" height="212.7" v-if="isScroll"/>
-    <rect x="295" y="263.3" clip-path="url(#rainbowClip)" fill="#75C095" width="10" height="212.7" v-if="isScroll"/>
-    <rect x="305" y="263.3" clip-path="url(#rainbowClip)" fill="#5991AA" width="10" height="212.7" v-if="isScroll"/>
-    <rect x="315" y="263.3" clip-path="url(#rainbowClip)" fill="#7D6AAD" width="10" height="212.7" v-if="isScroll"/>
+    <rect x="275" y="275" clip-path="url(#rainbowClip)" fill="#CC583F" width="10" height="350" v-if="isScroll"/>
+    <rect x="285" y="275" clip-path="url(#rainbowClip)" fill="#ECB447" width="10" height="350" v-if="isScroll"/>
+    <rect x="295" y="275" clip-path="url(#rainbowClip)" fill="#75C095" width="10" height="350" v-if="isScroll"/>
+    <rect x="305" y="275" clip-path="url(#rainbowClip)" fill="#5991AA" width="10" height="350" v-if="isScroll"/>
+    <rect x="315" y="275" clip-path="url(#rainbowClip)" fill="#7D6AAD" width="10" height="350" v-if="isScroll"/>
 
     <g class="astronaut">
       <g class="pulseSVG" opacity="0.2" stroke="#ededed">
@@ -83,8 +83,6 @@
     data() {
       return {
         isScroll: false,
-        height: 300,
-        scroll: 0
       }
     },
     methods: {
@@ -94,22 +92,6 @@
         } else {
           this.isScroll = true
         }
-
-        if (window.scrollY > this.scroll) {
-          if (this.height < 500) {
-            this.height += 4
-          }
-        } else {
-          if (this.height > 300) {
-            this.height -= 4
-          }
-        }
-
-        if (this.scroll === 1) {
-          this.height = 300
-        }
-
-        this.scroll = window.scrollY
       }
     },
     created () {
@@ -127,5 +109,17 @@
 </script>
 
 <style>
+  .landing {
+    transform: translateY(0);
+    transition-timing-function: ease-in;
+    transition: 1s;
+  }
+  .takeoff {
+    transition: 4s;
+    transition-timing-function: ease-out;
+    
+    transform: translateY(-500%);
+    opacity: 1;
+  }
 </style>
 
