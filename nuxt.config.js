@@ -98,7 +98,7 @@ module.exports = {
         },
         fr: {
           welcome: 'Bienvenue',
-          presentation: "D'abord autodidacte et maintenant developpeur full stack. J'ai ouvert ma micro entreprise il y a peu. Des petits au grands projets, je suis ouvert à toute proposition de travail."
+          presentation: "D'abord autodidacte et maintenant developpeur full stack. J'ai ouvert ma micro entreprise il y a peu. Des petits aux grands projets, je suis ouvert à toute proposition de travail."
         }
       }
     }
