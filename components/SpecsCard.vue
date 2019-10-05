@@ -2,22 +2,22 @@
   <div class="container my-12 mx-auto px-4 md:px-12">
     <div class="flex flex-wrap -mx-1 lg:-mx-4 justify-center">
 
-      <article-card title="Rope Up - Basecamp" 
-                    content="Implementation and maintenance of the backend side of the application" 
+      <article-card title="Rope Up - Basecamp"
+                    content="Implementation and maintenance of the backend side of the application"
                     :tags="[
-                      {name: 'laravel', link: 'https://laravel.com'}, 
-                      {name: 'vuejs', link: 'https://vuejs.org'}, 
-                      {name: 'rest-api', link: '#'}, 
+                      {name: 'laravel', link: 'https://laravel.com'},
+                      {name: 'vuejs', link: 'https://vuejs.org'},
+                      {name: 'rest-api', link: '#'},
                     ]"
                     link="https://www.ropeup.fr/"
                     image-path="/ropeUp.png">
       </article-card>
 
-      <article-card title="This Portfolio" 
-                    content="Creation, implementation and maintenance" 
+      <article-card title="This Portfolio"
+                    content="Creation, implementation and maintenance"
                     :tags="[
-                      {name: 'nuxt', link: 'https://fr.nuxtjs.org'}, 
-                      {name: 'vuejs', link: 'https://vuejs.org'}, 
+                      {name: 'nuxt', link: 'https://fr.nuxtjs.org'},
+                      {name: 'vuejs', link: 'https://vuejs.org'},
                     ]"
                     link="https://thewawancompany.fr"
                     image-path="/astro.png"
@@ -25,12 +25,22 @@
                     vcstype="gitlab">
       </article-card>
 
-      <article-card title="Festipay" 
-                    content="Creation, implementation and maintenance of the api side of the applicaiton" 
+      <article-card title="Sis formation"
+                    content="Creation, implementation and maintenance"
                     :tags="[
-                      {name: 'laravel', link: 'https://laravel.com'}, 
-                      {name: 'vuejs', link: 'https://vuejs.org'}, 
-                      {name: 'angular', link: 'https://angular.io'}, 
+                      {name: 'nuxt', link: 'https://fr.nuxtjs.org'},
+                      {name: 'vuejs', link: 'https://vuejs.org'},
+                    ]"
+                    link="https://sis-formation.com"
+                    image-path="/logo-sis.png">
+      </article-card>
+
+      <article-card title="Festipay"
+                    content="Creation, implementation and maintenance of the api side of the applicaiton"
+                    :tags="[
+                      {name: 'laravel', link: 'https://laravel.com'},
+                      {name: 'vuejs', link: 'https://vuejs.org'},
+                      {name: 'angular', link: 'https://angular.io'},
                       {name: 'xamarin', link: 'https://docs.microsoft.com/fr-fr/xamarin'}
                     ]"
                     link="#"
